@@ -11,8 +11,8 @@ namespace Agenda
         {
             try
             {
-                string datos = System.IO.File.ReadAllText(@"Datos\Personas.csv");
-                MessageBox.Show(datos);
+                string[] datos = File.ReadAllLines(@"Datos\Personas.csv");
+                MessageBox.Show(datos[1]);
             }
             catch (Exception ex)
             {
